@@ -1,10 +1,10 @@
-/**
- *
- * You can write your CSS code here, DO NOT touch the default JavaScript file
- * because it will make it harder for you to update.
- * 
- */
- .loading-section {
+<template>
+    <div class="loading-section">
+          <div class="custom-loading-circle "></div>
+        </div>
+</template>
+<style scoped>
+  .loading-section {
     /* style="position:absolute; z-index: 99;" */
     position: absolute;
     transition: all 0.5s ease-in;
@@ -16,8 +16,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(1.5px);
-    background-color: rgba(244, 244, 244, 0.15);
+    backdrop-filter: blur(1.5px) ,saturate(180%) , shade(0.5) ;
+    /* background-color: rgba(244, 244, 244, 0.15); */
     overflow: hidden;
     margin: auto;
 }
@@ -49,5 +49,4 @@
         transform: rotate(360deg);
     }
 }
-
-/*# sourceMappingURL=custom.css.map */
+</style>

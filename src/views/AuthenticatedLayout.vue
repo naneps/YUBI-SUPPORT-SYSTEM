@@ -6,7 +6,7 @@
     <div class="main-content">
       <section class="section">
         <div class="section-header">
-          <h1>{{ currentRoute.toUpperCase() }}</h1>
+          <h1>{{ currentRoute }}</h1>
         </div>
         <div class="section-body">
           <router-view></router-view>
