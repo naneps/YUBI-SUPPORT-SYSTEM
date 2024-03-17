@@ -4,4 +4,6 @@ export { default as InputField } from "./InputField.vue";
 export { default as Loading } from "./LoadingComponent.vue";
 export { default as Navbar } from "./Navbar.vue";
 export { default as Sidebar } from "./Sidebar.vue";
+export { default as Table } from "./Table.vue";
+
 

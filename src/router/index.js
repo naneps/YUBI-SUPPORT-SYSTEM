@@ -51,7 +51,16 @@ router.beforeEach((to, from, next) => {
     // Redirect to dashboard if not requiring auth and already logged in
     next({name: "Dashboard"});
   } else {
-    next(); // Continue navigation
+    //  next from
+    next(
+
+    );
+  }
+  document.title = "YSS | " + to.meta.title;
+  // document.icon = to.meta.icon;
+  // if not found
+  if (to.name === "NotFound") {
+    document.title = "YSS | Not Found";
   }
 });
 

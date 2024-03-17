@@ -2,10 +2,6 @@
   <div class="row">
     <div class="col-12">
       <div class="card">
-        <!-- BUTTON ADD -->
-
-        <!-- END BUTTON ADD -->
-        
         <div class="card-body">
           <div class="table-responsive">
             <table class="table table-striped" id="table-1">
@@ -19,7 +15,7 @@
                 </tr>
               </thead>
               <tbody class="position-relative">
-              <Loading/>
+                <Loading />
                 <tr v-for="(user, index) in users" :key="user.id">
                   <td>{{ index + 1 }}</td>
                   <td>{{ user.name }}</td>
