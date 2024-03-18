@@ -36,7 +36,7 @@ The Yubi Support System is a robust web application that enables clients to repo
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/yubi-support-system.git
+   git clone https://github.com/YubiRepo/yubi-support-system.git
    ```
 
 2. Navigate to the project directory:
