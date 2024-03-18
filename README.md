@@ -1,50 +1,75 @@
-# Vue 3 + Vite + Tailwind
-This is a template for creating a Vue 3 project with Vite and Tailwind CSS.
 
-## Versions
-| Vue | Vite | Tailwind |
-| --- | ---- | -------- |
-| 3.0.0 | 2.0.0-beta.65 | 2.0.0 |
+---
+
+# Yubi Support System
+
+Welcome to the Yubi Support System, a web-based platform designed to facilitate efficient communication and issue resolution between clients and customer service representatives at Yubi.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+The Yubi Support System is a robust web application that enables clients to report issues or inquiries and allows customer service representatives to manage and resolve these tickets effectively. With a user-friendly interface and powerful features, the system streamlines the support process and enhances customer satisfaction.
 
 ## Features
-- Vue 3
-- Vite
-- Tailwind CSS
-  
-## Requirements
-- Node.js
-- NPM
-- Git
-- A code editor
-- A browser
-- A terminal
-- A brain
-  
-  
+
+- User authentication and authorization
+- Ticket creation, tracking, and management
+- Assignment of tickets to specific customer service representatives
+- Attachment of files (images, videos, documents) to tickets and comments
+- Real-time updates on ticket status and progress
+- Search and filtering capabilities for tickets
+- Role-based access control for enhanced security
+- Detailed reporting and analytics tools
+
 ## Getting Started
-### Use Clone
-1. Clone this repository 
-2. Run `npm install`
-3. Run `npm run dev`
-4. Open `http://localhost:3000` in your browser
-5. Start coding!
 
-### Use Template
-1. Click the `Use this template` button
-2. Create a new repository
-3. Clone the new repository
-4. Run `npm install`
-5. Run `npm run dev`
-6. Open `http://localhost:3000` in your browser
-7. Start coding!
-8. When you are ready to deploy, run `npm run build` and the build files will be in the `dist` directory
-<!-- setup for name project int package.json -->
-## Setup
-1. Change the name of the project in `package.json`
+### Installation
 
-## Building for Production
-1. Run `npm run build`
-2. The build files will be in the `dist` directory
-3. You can serve the files with `npm run serve`
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/yubi-support-system.git
+   ```
 
-<!-- make table for version -->
+2. Navigate to the project directory:
+   ```bash
+   cd yubi-support-system
+   ```
+
+3. Install dependencies using your preferred package manager:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+### Usage
+
+1. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+2. Access the application in your web browser at `http://localhost:3000`.
+
+## Contributing
+
+We welcome contributions from the community to enhance the Yubi Support System. If you have suggestions, bug reports, or feature requests, please open an issue or submit a pull request following our [contribution guidelines](CONTRIBUTING.md).
+
+## License
+
+The Yubi Support System is open-source software licensed under the [MIT License](LICENSE).
+
+---
+
+In this README file, you can provide more specific details about installation instructions, usage guidelines, contribution guidelines, and licensing information as per your project's needs.
