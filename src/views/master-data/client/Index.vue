@@ -3,5 +3,5 @@
     <div class="card"></div>
   </div>
 </template>
-<script></script>
+<script setup></script>
 <style></style>

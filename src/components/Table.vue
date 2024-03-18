@@ -14,7 +14,7 @@
           <td :colspan="columns.length" class="text-center">Loading...</td>
         </tr>
         <tr v-if="!items.length && !isLoading">
-          <td>
+          <td colspan="12" align="center">
             <template v-if="!isLoading">
               <slot name="empty"> No data available </slot>
             </template>

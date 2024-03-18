@@ -4,11 +4,11 @@
       <div
         class="col-lg-4 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
         <div class="p-4 m-3">
-          <img
+          <!-- <img
             src="../assets/img/stisla-fill.svg"
             alt="logo"
             width="80"
-            class="shadow-light rounded-circle mb-5 mt-2" />
+            class="shadow-light rounded-circle mb-5 mt-2" /> -->
           <h4 class="text-dark font-weight-normal">
             Welcome to <span class="font-weight-bold">YSS</span>
           </h4>
@@ -70,10 +70,10 @@
 
 <script setup>
 // Import necessary components and functions
-import {Button, InputField} from "@/components";
-import {useAuthStore} from "@/store/modules/auth-store";
-import {ref} from "vue";
-import {useRouter} from "vue-router";
+import { Button, InputField } from "@/components";
+import { useAuthStore } from "@/store/modules/auth-store";
+import { ref } from "vue";
+import { useRouter } from "vue-router";
 const router = useRouter();
 const email = ref("");
 const password = ref("");

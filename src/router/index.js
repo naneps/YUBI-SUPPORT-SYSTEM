@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import masterDataRoutes from "./master-data";
+import { issueRoutes } from "./modules/issue-route";
 const routes = [
   ...masterDataRoutes,
+  ...issueRoutes,
   {
     path: "/",
     name: "Dashboard",
@@ -11,7 +13,6 @@ const routes = [
       title: "Dashboard",
     },
   },
-
   {
     path: "/auth/login",
     name: "Login",
@@ -20,7 +21,7 @@ const routes = [
       requiresAuth: false,
       title: "Login",
       layout: "DefaultLayout",
-    },
+  },
   },
   // NotFound route should be at the end
   {
@@ -43,12 +44,24 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   const isAuthenticated = !!localStorage.getItem("token");
   const requiresAuth = to.matched.some((record) => record.meta.requiresAuth);
-
+  // handle middleware
   if (requiresAuth && !isAuthenticated) {
     // Redirect to login if requires authentication and not logged in
     next({name: "Login"});
   } else if (!requiresAuth && isAuthenticated) {
     // Redirect to dashboard if not requiring auth and already logged in
+    // check middleware
+    if (to.meta.middlewares) {
+      console.log(to.meta.middlewares);
+      to.meta.middlewares.forEach((middleware) => {
+        const [name, param] = middleware.split(":");
+        if (name === "role") {
+          if (param !== "admin") {
+            next({name: "Dashboard"});
+          }
+        }
+      });
+    }
     next({name: "Dashboard"});
   } else {
     //  next from

@@ -80,35 +80,35 @@ a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {
 }
 
 .bg-primary {
-  background-color: #ef6767 !important;
+  background-color: var(--primary) !important;
 }
 
 .bg-secondary {
-  background-color: #cdd3d8 !important;
+  background-color:v ar(--secondary) !important;
 }
 
 .bg-success {
-  background-color: #47c363 !important;
+  background-color: var(--success) !important;
 }
 
 .bg-info {
-  background-color: #3abaf4 !important;
+  background-color: var(--info) !important;
 }
 
 .bg-warning {
-  background-color: #ffa426 !important;
+  background-color: var(--warning) !important;
 }
 
 .bg-danger {
-  background-color: #fc544b !important;
+  background-color: var(--danger) !important;
 }
 
 .bg-light {
-  background-color: #e3eaef !important;
+  background-color: var(--light) !important;
 }
 
 .bg-dark {
-  background-color: #191d21 !important;
+  background-color: var(--dark) !important;
 }
 
 .text-primary,
@@ -2648,7 +2648,7 @@ ul.nav-tabs li.nav-item a.nav-link.active i {
 :root {
   /* Colors */
   --primary: #415AC7;
-  --secondary: #34395e;
+  --secondary: #6D00C7;
   --success: #47c363;
   --info: #3abaf4;
   --warning: #ffa426;

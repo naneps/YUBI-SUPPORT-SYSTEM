@@ -1,12 +1,25 @@
 <template>
-  <div class="row">
-    <div class="col-12">
-      <div class="card">
-        <div class="card-header">
-          <h4>Companies</h4>
-        </div>
-        <div class="card-body">
-          <Table
+  <GridRow>
+    <GridColumn lg="12" sm="12" md="12">
+      <Card>
+        <GridRow class="mb-2">
+          <GridColumn lg="6">
+            <SearchInput
+              class="float-left"
+              placeholder="Search User"
+              @search="searchCompanies" />
+          </GridColumn>
+          <GridColumn lg="6">
+            <Button
+              type="primary"
+              class="float-right px-2 py-2"
+              icon="fas fa-plus"
+              @click="router.push({name: 'create-role'})">
+              Create Company
+            </Button>
+          </GridColumn>
+        </GridRow>
+        <Table
             :headers="tableHeaders"
             :columns="tableColumns"
             :items="companies"
@@ -45,16 +58,15 @@
               </div>
             </template>
           </Table>
-        </div>
-      </div>
-    </div>
-  </div>
+      </Card> 
+    </GridColumn>
+  </GridRow>
 </template>
 <script setup>
 import { onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 
-import { Button, Table } from "@/components";
+import { Button, Card, GridColumn, GridRow, SearchInput, Table } from "@/components";
 
 import { useCompanyStore } from "@/store/modules/company-store";
 const router = useRouter();

@@ -1,6 +1,6 @@
-<template >
+<template>
     <div>
-        
+        CREATE ISSUE
     </div>
 </template>
 <script setup>
