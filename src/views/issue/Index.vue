@@ -66,14 +66,14 @@
 </template>
 
 <script setup>
-import {
-    Button,
-    Card,
-    GridColumn,
-    GridRow,
-    SearchInput,
-    Table,
-} from "@/components/";
+// import {
+//     Button,
+//     Card,
+//     GridColumn,
+//     GridRow,
+//     SearchInput,
+//     Table,
+// } from "@/components/";
 import { useIssueStore } from "@/store/modules/issue-store";
 import { onMounted, ref } from "vue";
 import { useRouter } from "vue-router";

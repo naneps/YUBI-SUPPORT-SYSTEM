@@ -70,7 +70,7 @@
 
 <script setup>
 // Import necessary components and functions
-import { Button, InputField } from "@/components";
+// import { Button, InputField } from "@/components";
 import { useAuthStore } from "@/store/modules/auth-store";
 import { ref } from "vue";
 import { useRouter } from "vue-router";
@@ -80,7 +80,7 @@ const password = ref("");
 const authStore = useAuthStore();
 const login = () => {
   authStore.login();
-  router.push("/");
+  window.location.href = "/";
 };
 </script>
 

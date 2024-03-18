@@ -17,7 +17,6 @@
 </template>
 
 <script setup>
-import { Navbar, Sidebar } from '@/components';
 import { ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 const router = useRouter();
